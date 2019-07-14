@@ -1,0 +1,296 @@
+:root {
+  --lib-orange: #FFA918;
+  --lib-blue: #0E4E8F;
+  --light-gray: #616161;
+  --dark-gray: #444444;
+  --container-blue: #E2EEF2;
+  --font-main: 'Myriad pro';
+}
+
+body {
+  font-family: var(--font-main) !important;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.notesCntnr {
+  padding: 1em;
+}
+
+#patronContainer {
+  margin: 3em 0 3em 0;
+  padding: 1em;
+  border: 0.5px dotted gray;
+}
+/***Flex***/
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContainerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexChild {
+  flex: 1;
+  display: flex;
+}
+
+.flexChildJustify {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/***Logo***/
+
+.logoTitle {
+  color: white;
+}
+
+#titleTop {
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+
+#titleBottom {
+  font-size: 17px;
+  position: absolute;
+  top: 40px;
+  left: 170px;
+}
+
+/***button***/
+
+button.submit {
+  background-color: #ffb124;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px #f4cb95;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.submitContainer {
+  margin-top: 1.4em;
+}
+
+/***Acccordion and Content***/
+
+.policyContent {
+  margin-left: 1.3em;
+}
+
+#innerCntnrTopImg {
+  margin: auto;
+  margin-left: 3em;
+  width: 90%;
+}
+
+.secContainer {
+  color: var(--light-gray);
+  background: #dae7ed;
+  height: 53px;
+  border-bottom: 1px solid #d0d9db;
+}
+
+.accordion {
+  border-top: solid 1px #e4e8eb;
+}
+
+.is-active > a.accordion-title {
+  background-color: #f2f5f7;
+}
+
+.accordion-title {
+  font-size: 16px;
+  color: var(--light-gray);
+  box-shadow: 0px 2px 7px #d6d5d4;
+}
+
+.accordion-title:hover {
+  color: var(--dark-gray);
+}
+
+.secTitleImg {
+  margin-left: 15px;
+}
+
+.secTitle {
+  margin-right: 15px;
+  justify-content: center;
+}
+
+/*for view transaction*/
+.subHeadings.secTitle {
+  font-size: 20px;
+  color: white;
+  background: #2E697A;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.blueContainer {
+  background-color: var(--container-blue);
+  padding: 20px;
+  position: relative;
+}
+
+.contactFillCtnr {
+  padding: 20px;
+  position: relative;
+}
+
+.dotted {
+  border-color: var(--light-gray);
+  border-bottom-style: dotted;
+}
+
+/*Customizing inputs*/
+
+input[type='file'] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+input[type='file'] ~ label {
+  color: red;
+}
+
+#name {
+  width: 50%;
+}
+#barcode {
+  width: 20%;
+}
+#phone {
+  width: 50%;
+}
+#email {
+  width: 79%;
+}
+
+.deviceNameInput {
+  width: 50%;
+}
+
+label.special.deviceNameLabel {
+  font-size: 28px;
+}
+.checkmark.radio {
+    border-radius: 25px;
+    margin-top: 7px;
+}
+
+/**Device & Accessories**/
+
+#shadowsDevice {
+  margin-top: 20px;
+  box-shadow:
+   /* First layer */
+   0 -30px 0 -20px rgba(35,31,32,0.13),
+    /* Second layer */
+   0 -60px 0 -40px rgba(94,94,94,0.05),
+   /* Second layer shadow */
+   0 -60px 0px -40px rgba(94,94,94,0.05);
+
+}
+
+#accssrtitle {
+  font-size: 18px;
+  color: var(--dark-gray);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+#device {
+  font-weight: bold;
+  color: white;
+  width: 180px;
+  background: #3085b5;
+  height: 110px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#deviceName {
+  font-size: 28px;
+}
+
+#deviceBarcode {
+  font-size: 14px;
+}
+
+#dueDate {
+  font-weight: bold;
+  color: white;
+  background: var(--dark-gray);
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  right: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#dateCntnr {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.labelCheckCntnr {
+  display: flex;
+  margin-top: 10px;
+  width: 259px;
+  padding: 15px 30px 15px 30px;  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow:
+     0px 4px 4px -2px rgba(25, 25, 25, 0.10),
+     0px -9px 7px -7px rgba(25, 25, 25, 0.08);
+}
+
+/* Device Condition */
+
+.darkGrayText {
+  color: var(--dark-gray);
+}
+
+.photo {
+  width: 122px;
+  height: 112px;
+}
+
+#conditionContainer {
+  margin-bottom: 25px;
+}
+
+.customLabel {
+  font-weight: bold;
+  color: var(--light-gray);
+  justify-content: center;
+}
+
+.photoContainer {
+  position: relative;
+  justify-content: center;
+}
+
+#deviceNotes, #deviceInNotes {
+    height: 80px;
+    border-radius: 10px;
+}

@@ -1,0 +1,366 @@
+
+/* grid */
+.col1Device {
+  grid-column: 1/3; /*start at 1, end at 4*/
+}
+
+.col3Device {
+  display: flex;
+  align-items: center;
+}
+
+/*end grid*/
+
+.ui-widget {
+  z-index: 1005 !important;
+}
+
+
+/*svg, line connector design*/
+svg:not(:root)#connectToHistory {
+    overflow: hidden;
+    position: absolute;
+    top: 998px;
+    left: 49%;
+}
+svg:not(:root)#connectToDeviceTitle {
+  overflow: hidden;
+  position: absolute;
+  left: 17px;
+  top: 37px;
+}
+svg:not(:root)#connectToManageTitle {
+    overflow: hidden;
+    position: absolute;
+    top: 31px;
+    left: 49.5%;
+}
+/*end svg*/
+
+#bg {
+  background-image: url('/LibServices/deviceLoan_assets/img/bgAdmin.png');
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+#addImg {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  background-color: var(--lighter-orange);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.secTitle {
+  font-size: 20px;
+  color: white;
+}
+
+.subHeading.subHeadings {
+  margin-top: 0;
+}
+
+#addDevicebutton, .addAccessoryBtn {
+  margin-bottom: 50px;
+}
+
+#accessoryName {
+  min-width: 60px;
+}
+
+.deviceActionBtn {
+  margin-left: 1em;
+}
+
+#devicesContainer {
+  background: white;
+  margin-top: 50px;
+  min-height: 860px;
+}
+
+#from {
+  margin-right: 1em;
+}
+
+#to {
+  margin: 0 1em 0 1em;
+}
+
+#loansCount {
+  font-size: 20px;
+  background: var(--container-blue);
+  padding: 5px;
+  margin-left: 30px;
+}
+
+input.rangeInput {
+  text-align: center;
+  margin: 0;
+}
+
+button#searchRange {
+  background-color: #ffb124;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px #f4cb95;
+  padding: 8px;
+  margin: 0;
+  margin-left: 1em;
+}
+
+#manageDevicesCtnr {
+  position: relative;
+}
+
+span#manageDevicesTitle {
+    margin-left: 15px;
+}
+
+#historyTitleCtnr {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#historyContainer {
+  background: white;
+  overflow-x: auto;
+}
+
+#devicesContainer, #historyContainer {
+  box-shadow: -webkit-box-shadow: 17px 14px 16px -4px rgba(0,0,0,0.62);
+  -moz-box-shadow: 17px 14px 16px -4px rgba(0,0,0,0.62);
+  box-shadow: 17px 14px 16px -4px rgba(0,0,0,0.62);
+}
+
+.grid-container > div#pseudoBorder {
+  display: grid;
+  border-left: 2px solid var(--lighter-gray);
+  border-right: 2px solid var(--lighter-gray);
+  border-bottom: 2px solid var(--lighter-gray);
+
+  position: relative;
+  overflow-x: auto;
+}
+
+.grid-container > div#pseudoBorder::before {
+  content: "";
+  width: 50%;
+  border-top: 2px solid var(--lighter-gray);
+  position: absolute;
+  left: 50%;
+}
+
+/*When scroll bar appears*/
+@media screen and (max-width: 712px) {
+    .grid-container > div#pseudoBorder::before {
+        width: 0; /*hide pseudo border*/
+    }
+
+    .grid-container > div#pseudoBorder {
+        border-top: 2px solid var(--lighter-gray); /*add border top in place of pseudo border*/
+    }
+
+    svg:not(:root)#connectToDeviceTitle {
+      height: 63px; /*Decrease height of connector, so it won't go over content as scrollbar-x is moved*/
+    }
+
+    #partialBorder {
+      border-left: 2px solid var(--lighter-gray); /*Complete the border around table with a left border*/
+    }
+}
+
+#selectDeviceCntnr a > button {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dark-gray);
+  background: #ebebeb;
+  border: 1px solid var(--light-gray);
+  padding: 10px;
+  width: 90px;
+}
+
+
+hr#connector { /*button divider*/
+  display: inline-block;
+  height: 1px;
+  width: 15px;
+  background: var(--lighter-gray);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#partialBorder {
+  padding: var(--container-pad);
+  border-top: 2px solid var(--lighter-gray);
+  border-bottom: 2px solid var(--lighter-gray);
+  border-right: 2px solid var(--lighter-gray);
+}
+
+input[type="submit"] {
+  color: white;
+  background: var(--light-gray);
+}
+
+div.disabled {
+  background: #0A0A0A;
+}
+
+.inputContainer {
+  margin: 2em;
+}
+
+.checkmark.radio {
+  border-radius: 25px;
+  margin-top: 7px;
+}
+
+.radioSpace {
+  padding-right: 9px;
+  margin-left: 1em;
+  margin-top: 6px;
+}
+
+#quantity {
+  width: 35px;
+}
+
+/* Tabs */
+
+.tabs {
+  border: none;
+}
+
+.vertical.tabs {
+  margin-left: 15px;
+}
+
+div.tabs-content {
+  background: none;
+  border: none;
+}
+
+li.tabs-title {
+  background: var(--dark-gray);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 80%;
+}
+
+.tabs-title > a:hover {
+  background: var(--dark-gray);
+  color: white;
+  padding-left: 20px;
+  border-left: solid #ffb340;
+  border-left-width: 10px;
+  box-shadow: 2px 2px 3px #f4cb95;
+}
+
+.tabs-title > a {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: 4px double var(--lighter-gray);
+}
+
+.tabs-title.is-active > a {
+  font-weight: bold;
+  color: white;
+  background: var(--light-blue);
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+}
+
+#deviceTabs {
+  overflow-y: scroll;
+  height: 744px;
+  width: 216px;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.accssContainer {
+  overflow-y: auto;
+  height: 270px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--dark-gray);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--lib-blue);
+}
+
+
+/* Table */
+
+.ui-datepicker th {
+  padding: 0.5rem 0.625rem 0.625rem; /* default size for '.ui-datepicker th' is buggie. This size was taken from foundation 6 table style */
+}
+
+table.ui-datepicker-calendar > tbody > tr > td {
+  background: var(--lighter-gray);
+  padding: 0;
+  min-width: 100%;
+}
+
+table, thead > tr > th {
+  text-align: center;
+}
+
+th {
+  color: white;
+  background-color: var(--dark-gray);
+  border-right: 10px solid white;
+  border-bottom: 3px solid white;
+}
+
+tr > td:first-child {
+  font-weight: bold;
+  background: var(--lighter-orange);
+  border-bottom: none;
+}
+
+table > tbody > tr > td {
+  background: var(--lighter-gray);
+  border-right: 10px solid white;
+  border-bottom: 3px solid white;
+  padding: 0;
+  min-width: 210px;
+}
+
+tr > td > div {
+  white-space: nowrap;
+  border-left: 2px solid #c0c0c0;
+  border-right: 2px solid #c0c0c0;
+  padding: 10px;
+}
+
+tr:first-child > td > div {
+  border-top: 2px solid #c0c0c0;
+}
+
+tr:last-child > td > div  {
+  border-bottom: 2px solid #c0c0c0;
+}

@@ -1,0 +1,425 @@
+:root {
+  --lib-orange: #ffa918;
+  --lighter-orange: #ffc581;
+  --lib-blue: #0E4E8F;
+  --light-blue: #3085b5;
+  --light-gray: #616161;
+  --lighter-gray: #ebebeb;
+  --dark-gray: #444444;
+  --container-blue: #E2EEF2;
+  --font-main: 'Myriad pro';
+  --container-pad: 30px;
+
+}
+
+body {
+  font-family: var(--font-main) !important;
+}
+
+.has-tip {
+  color: var(--lib-orange);
+}
+.tooltip {
+  background: var(--dark-gray);
+}
+
+select {
+  font-size: 30px;
+  text-align-last: center;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  height: 60px;
+}
+
+.exception {
+  font-size: 20px;
+  color: red;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.blueWrapper {
+  background-color: var(--container-blue);
+  padding: 20px;
+}
+
+/***Logo & Employee***/
+
+#bg {
+  background-image: url('/LibServices/deviceLoan_assets/img/bg.png');
+  background-repeat: repeat;
+  background-size: 100%;
+  margin: 0;
+}
+
+.logoTitle {
+  color: white;
+}
+
+a.titleLink {
+  color: white;
+}
+a.titleLink:hover {
+  color: var(--lib-blue);
+}
+
+#titleTop {
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: 120px;
+}
+
+#titleBottom {
+  font-size: 17px;
+  position: absolute;
+  top: 40px;
+  left: 170px;
+}
+
+#employee {
+    font-size: 17px;
+    float: right;
+}
+#employee li a {
+    color: white;
+}
+
+#logoutBtn {
+    color: white;
+    width: 100%;
+}
+
+ul.menu {
+  text-align: center;
+}
+
+ul.menu > li:hover {
+  background: var(--dark-gray);
+}
+
+li.is-submenu-item.is-dropdown-submenu-item {
+    background-color: var(--lib-orange);
+    padding: 4px;
+}
+
+#employee li a::after {
+    border-color: var(--lib-orange) transparent transparent;
+}
+
+/***Footer***/
+
+#footer {
+  color: white;
+  background: #2E697A;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+}
+
+/***Flex and Grid***/
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexContainerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexChild {
+  flex: 1;
+  display: flex;
+}
+
+.flexChildcol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 30px;
+  margin-left: auto;
+}
+
+/***Activity icon***/
+
+.loadActivityICO {
+    position: fixed;
+    z-index: 1010;
+    top: 46%;
+    right: 46%;
+}
+
+/***Images placeholders***/
+img.imagePlaceholder {
+  cursor: pointer;
+  width: 122px;
+  height: 112px;
+}
+
+/***buttons***/
+
+button.submit {
+  background-color: #ffb124;
+  margin-bottom: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px #f4cb95;
+  margin-top: 30px;
+}
+
+.submitContainer {
+  margin-top: 1.4em;
+}
+
+.button.backBtn {
+    border-radius: 10px;
+    padding: 8px;
+}
+.button#toUrlBtnDisabled {
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background: gray;
+}
+
+.button.toUrlBtn {
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+/**Device & Accessories**/
+
+#shadowsDevice {
+  margin-top: 20px;
+  box-shadow:
+   /* First layer */
+   0 -30px 0 -20px rgba(35,31,32,0.13),
+    /* Second layer */
+   0 -60px 0 -40px rgba(94,94,94,0.05),
+   /* Second layer shadow */
+   0 -60px 0px -40px rgba(94,94,94,0.05);
+
+}
+
+.subHeadings {
+  font-size: 18px;
+  color: var(--dark-gray);
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.device {
+  font-weight: bold;
+  color: white;
+  width: 180px;
+  background: #3085b5;
+  height: 110px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#deviceName {
+  font-size: 28px;
+}
+
+#deviceBarcode {
+  font-size: 14px;
+}
+
+#deviceName, #dateCntnr {
+  margin-bottom: 10px;
+}
+
+#dueDate {
+  font-weight: bold;
+  color: white;
+  background: var(--dark-gray);
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  position: relative;
+  right: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#dateCntnr {
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.labelCheckCntnr {
+  display: flex;
+  margin-top: 10px;
+  width: 259px;
+  padding: 15px 30px 15px 30px;  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow:
+     0px 4px 4px -2px rgba(25, 25, 25, 0.10),
+     0px -9px 7px -7px rgba(25, 25, 25, 0.08);
+}
+
+/*Customizing inputs*/
+
+.inputContainer {
+  position: relative;
+  margin-top: 3em;
+}
+
+.innerContainer {
+  padding: 3em;
+  margin: 0 3em 3em 3em;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+}
+
+.successInnerContainer {
+  padding: 3em 3em 3em 3em;
+  margin: 0 3em 3em 3em;
+  background-color: #F8F8F8;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.46);
+}
+
+label.special {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top 0.8s, font-size 0.8s, color 0.5s;
+  transition: top 0.8s, font-size 0.8s, color 0.5s;
+}
+
+input.input {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  border-bottom: 2px solid gray;
+}
+
+input.input:focus {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid var(--lib-orange);
+}
+
+input:focus + label.special {
+  color: var(--lib-orange);
+  font-size: 16px;
+  top: -1.4em;
+}
+
+/*cannot use :valid without the required attr in the input.*/
+/*input:valid + label {
+  font-size: 16px;
+  top: -5.2em;
+}*/
+
+/*if text is typed in input, placeholder is not shown, then apply css*/
+input:not(:placeholder-shown) + label {
+  font-size: 16px;
+  top: -1.4em;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Custom Checkboxes*/
+/* Customize the label (the container) */
+.boolInputCntnr {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; /*can text be selected by user*/
+}
+
+/* Hide the browser's default checkbox */
+.boolInputCntnr input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  border: 1px solid #808080;
+  background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+/*.boolInputCntnr:hover input ~ .checkmark {
+  background-color: var(--lib-orange);
+}*/
+
+/* When the checkbox is checked, add a new background */
+.boolInputCntnr input:checked ~ .checkmark {
+  background-color: var(--lib-orange);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.boolInputCntnr input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.boolInputCntnr .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
