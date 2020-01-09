@@ -54,20 +54,20 @@ Packaged with the DBS is a selenium java project, which covers most of the appli
 
 ## Built With
 
-- CodeIgniter PHP framework - https://www.codeigniter.com/
-- Foundation for Sites by ZURB front-end framework - https://foundation.zurb.com
+- [CodeIgniter PHP framework](https://www.codeigniter.com/)
+- [Foundation for Sites by ZURB front-end framework](https://foundation.zurb.com)
 
 ## Author
 
-- Anderson Uribe-Rodriguez
+- [Anderson Uribe-Rodriguez](https://andersonuribe.com)
 
 ## Acknowledgments
 
 #### Plugins
-- CodeIgniter Ion Auth by Ben Edmunds - https://github.com/benedmunds/CodeIgniter-Ion-Auth
-- signature pad by Szymon Nowak - https://github.com/szimek/signature_pad
-- jQuery.floatThead by Misha Koryak - http://mkoryak.github.io/floatThead/
-- jQuery Timepicker Addon by Trent Richardson - https://trentrichardson.com/examples/timepicker/
+- [CodeIgniter Ion Auth by Ben Edmunds](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
+- [signature pad by Szymon Nowak](https://github.com/szimek/signature_pad)
+- [jQuery.floatThead by Misha Koryak](http://mkoryak.github.io/floatThead/)
+- [jQuery Timepicker Addon by Trent Richardson](https://trentrichardson.com/examples/timepicker/)
 
 #### People or Institution
 - Ursula C. Schwerin Library at the City College of Technology of New York for providing the servers and helping shape the application through usage and recommendations. 
